@@ -3,6 +3,8 @@ VAI Task
 
 #### to run app native:
 
+The base url is localhost:3000 
+
 1. open .env.example and edit your env variables then remove .example from the extenstion file        
 2. `npm i`
 4. `node init-db.js`
@@ -30,6 +32,8 @@ VAI Task
 ----
 
 #### to run app via docker-compose:
+
+The base url is localhost:8080 
 
 1. open the docker-compose file and add your env in the environment section but leave the DB_HOST as it is
 2. `docker-compose build`
