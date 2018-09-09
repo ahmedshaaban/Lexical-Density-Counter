@@ -1,5 +1,33 @@
-VAI Task
+Lexical Density Counter
 =============
+
+Lexical density is defined as the number of lexical words​ (or content words) divided by the
+total number of words. In the following sentence the green words are lexical words and the
+density is 66,67%.
+Kim loves going to the cinema
+For the sake of simplicity, we define a lexical word​ as all words not contained in the
+provided list of non lexical words in the Appendix. Case sensitivity should be ignored.
+
+
+● Route: GET /complexity
+○ Description:
+    Return the lexical density of the inputted text. The text should be provided via the body.
+○ output :
+    ```{ “data”:{
+    overall_ld: 0.42
+    }
+    }```
+
+● Route: GET /complexity?mode=verbose
+○ Description:
+    Return the lexical density of the text broken down into sentences. The text should be provided via the body.
+○ output :
+    ```{ “data”:{
+    sentence_ld: [ 0.23, 0.1, 1.0, 0.0],
+    overall_ld: 0.42
+    }
+    }```
+
 
 #### to run app native:
 
